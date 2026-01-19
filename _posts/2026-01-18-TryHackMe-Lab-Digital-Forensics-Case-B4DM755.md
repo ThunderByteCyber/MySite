@@ -11,6 +11,10 @@ This write‑up documents my approach to a simulated digital forensics and incid
 
 The scenario focuses on a corporate espionage investigation involving the suspected theft of trade secrets. I acted as the first responder and forensic analyst responsible for evidence handling, forensic imaging, and initial analysis.
 
+This lab made extensive use of FTK Imager, a tool I am already familiar with through my Cyber Forensics studies at Murdoch University, including previous forensic assignments and practical labs.
+
+In a real-world investigation, a write-blocking device would be used when mounting forensic artefacts to prevent accidental modification of evidence. This principle was reinforced during the lab.
+
 <br>
 
 2. Investigation Objectives
@@ -144,7 +148,7 @@ This lab allowed me to demonstrate and strengthen the following skills:
 
 <li>Use of industry‑standard tools (FTK Imager)</li>
 
-<li>Metadata analysis and interpretation using FTK Imager and exiftool</li>
+<li>Metadata analysis and interpretation using FTK Imager and ExifTool</li>
 
 <li>Investigative documentation and reporting</li>
 
@@ -165,6 +169,7 @@ The lab also highlighted how small artefacts, such as metadata or file inconsist
 
 I would like to acknowledge the Digital Forensics Case B4DM755 lab provided by TryHackMe as the foundation for the practical components of this write-up. This interactive room simulates a realistic digital forensics investigation where the learner assumes the role of a DFIR First Responder and Forensics Lab Analyst tasked with acquiring and analysing digital evidence for use in a hypothetical court case. The lab incorporates key forensic principles — including the preservation of the chain of custody, the use of FTK Imager for forensic disk imaging, and evidence analysis — through a structured scenario involving a fictitious suspect charged with corporate espionage and theft of trade secrets. The scenarios and guided tasks within this lab have directly informed the procedures and discussions presented in this report. 
 [Link to TryHackMe Lab](https://tryhackme.com/room/caseb4dm755)  
+
 
 
 
