@@ -1,50 +1,139 @@
 ---
 title: What is Jekyll? How to use it?
 layout: post
-post-image: "https://raw.githubusercontent.com/thedevslot/WhatATheme/master/assets/images/What%20is%20Jekyll%20and%20How%20to%20use%20it.png?token=AHMQUELVG36IDSA4SZEZ5P26Z64IW"
-description: Jekyll is a static site generator. You give it text written in your favorite
-  markup language and it uses layouts to create a static website.
+post-image: "https://www.flickr.com/photos/35632769@N00/3835498970"
+description: This write-up documents my approach to a simulated digital forensics and incident response (DFIR) 
+investigation on the TryHackMe - Digital Forensics Case: B4DM755
 tags:
-- jekyll
-- informative
-- technology
+- Forensics
+- FTK Imager
+- Digital
 ---
 
-Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx or another web server. Jekyll is the engine behind GitHub Pages, which you can use to host sites right from your GitHub repositories and if you don't know what GitHub Pages are you can visit on click [here](https://help.github.com/en/github/working-with-github-pages/about-github-pages){:target="blank"} or [here](https://pages.github.com/){:target="blank"}
-###### Source : [`Jekyll Docs`](https://jekyllrb.com/docs/)
 
-> ### To know more and get started with Jekyll you can click [here](https://jekyllrb.com/){:targe="_blank"}
-	
-# Installation
-**Jekyll is a Ruby Gem that can be installed on most systems.**
-### Requirements
-* [Ruby](https://www.ruby-lang.org/en/downloads/){:target="_blank"} version 2.5.0 or above, including all development headers (ruby version can be checked by running ruby -v)
-* [Ruby Gems](https://rubygems.org/pages/download){:target="_blank"} (which you can check by running gem -v)
-* [GCC](https://gcc.gnu.org/install/){:target="_blank"} and [Make](https://www.gnu.org/software/make/){:target="_blank"}
+# TryHackMe Lab: Digital Forensics Case B4DM755
 
-### After Installing the Requirements you can follow these guides:
-**For detailed install instructions have a look at the guide for your operating system.**
-* [macOS](https://jekyllrb.com/docs/installation/macos/){:target="_blank"}
-* [Ubuntu](https://jekyllrb.com/docs/installation/ubuntu/){:target="_blank"}
-* [Other Linux Distros](https://jekyllrb.com/docs/installation/other-linux/){:target="_blank"}
-* [Windows](https://jekyllrb.com/docs/installation/windows/){:target="_blank"}
+## Overview
 
-### Creating a new Jekyll site
-**We can create a new Jekyll site just by a simple command:**<br>
-> # `jekyll new my-site`
+This write‑up documents my approach to a simulated digital forensics and incident response (DFIR) investigation based on the TryHackMe – Digital Forensics Case: B4DM755 lab. The purpose of this post is to demonstrate forensic methodology, tool usage, and investigative reasoning in a portfolio‑safe manner, without disclosing sensitive answers, flags, or step‑by‑step solutions.
 
-Jekyll will create a new directory named as `my-site` which is customizable (i.e., you can change the name from `my-site` to anything you want for example `jekyll new brutus`).
+The scenario focuses on a corporate espionage investigation involving the suspected theft of trade secrets. I acted as the first responder and forensic analyst responsible for evidence handling, forensic imaging, and initial analysis.
 
-### Changing into the Directory
-**We have to go inside the directory:**<br>
-> # `cd my-site`
+This lab made extensive use of FTK Imager, a tool I am already familiar with through my Cyber Forensics studies at Murdoch University, including previous forensic assignments and practical labs.
 
-Again, `my-site` is just a random name which is customizable.
+In a real-world investigation, a write-blocking device would be used when mounting forensic artefacts to prevent accidental modification of evidence. This principle was reinforced during the lab.
 
-### Building the site and making it available on a local server
-> # `bundle exec jekyll serve`
+---
 
-### Browsing your Jekyll site
-> # Browse to [`http://localhost:4000/`](http://localhost:4000/){:target="_blank"}
+## Investigation Objectives
 
-###### On encountering any problem while building and serving your Jekyll site you can consider visiting to the [troubleshooting](https://jekyllrb.com/docs/troubleshooting/#configuration-problems){:target="_blank"} page
+The key objectives of the investigation were:
+
+1. Apply legally defensible digital forensics procedures
+2. Preserve and document evidence using chain of custody principles
+3. Create a forensically sound image of seized media
+4. Perform high‑level analysis of files and metadata
+5. Interpret findings in the context of a criminal investigation
+
+---
+
+## Forensic Methodology
+
+The investigation followed standard DFIR phases commonly used in law‑enforcement and corporate investigations:
+
+1. **Preparation & Legal Authority** – Understanding the scope of the investigation and ensuring legal authority (search and seizure considerations)
+2. **Identification & Preservation** – Locating digital evidence and preventing contamination or alteration
+3. **Collection** – Acquiring evidence using forensic tools and write‑blocking techniques
+4. **Examination & Analysis** – Reviewing file systems, metadata, and artefacts
+5. **Reporting** – Documenting findings in a clear, defensible manner
+
+This structured approach ensures that evidence remains admissible and defensible if presented in legal proceedings.
+
+---
+
+## Evidence Handling and Acquisition
+
+During the simulated search, removable media was identified as potential evidence. Proper evidence handling procedures were applied, including:
+
+- Documenting the evidence prior to examination
+- Using write‑blocking to prevent modification
+- Maintaining continuity through chain of custody documentation
+
+**Tools Used:**
+
+- FTK Imager – for evidence identification, preview, and forensic imaging
+- A full forensic image of the media was created using a raw (dd) format with hash verification enabled to ensure integrity
+
+---
+
+## Forensic Imaging Process
+
+Key forensic acquisition steps included:
+
+1. Verifying the media was not encrypted prior to imaging
+2. Selecting an appropriate image format for compatibility and integrity
+3. Generating cryptographic hashes to confirm image authenticity
+4. Verifying that the forensic image matched the source media
+
+This process ensures that all analysis is conducted on a verified copy rather than the original evidence.
+
+---
+
+## High‑Level Analysis Approach
+
+After acquisition, analysis focused on file system structure and artefact review, including:
+
+- Reviewing file listings and directory structures
+- Identifying deleted or hidden files
+- Examining file metadata for indicators such as:
+  * Creation and modification timestamps
+  * File type mismatches
+  * Embedded metadata (e.g., EXIF data)
+
+---
+
+## Investigative Reasoning
+
+Throughout the investigation, artefacts were interpreted within the broader case context. Examples of reasoning applied include:
+
+1. Correlating timestamps to reconstruct potential activity timelines
+2. Assessing whether file concealment techniques were used
+3. Identifying how metadata may link a suspect to locations or events
+4. Recognising indicators of deliberate data handling or exfiltration
+
+---
+
+## Key Skills Demonstrated
+
+This lab allowed me to demonstrate and strengthen the following skills:
+
+- Digital evidence handling and preservation
+- Forensic imaging and verification
+- Use of industry‑standard tools (FTK Imager)
+- Metadata analysis and interpretation using FTK Imager and ExifTool
+- Investigative documentation and reporting
+- Legal and ethical awareness in digital forensics
+
+---
+
+## Reflection
+
+This exercise reinforced the importance of process over answers in digital forensics. Proper documentation, integrity verification, and structured reasoning are critical for producing reliable and defensible findings.
+
+The lab also highlighted how small artefacts, such as metadata or file inconsistencies, can provide valuable investigative leads when analysed in context.
+
+Rather than focusing on challenge answers, the analysis emphasised how evidence can reveal user behaviour, timelines, and intent — a core skill in digital forensics.
+
+This analytical process mirrors real‑world DFIR investigations where technical findings must support investigative hypotheses.
+
+---
+
+## Acknowledgement
+
+I would like to acknowledge the Digital Forensics Case B4DM755 lab provided by TryHackMe as the foundation for the practical components of this write-up. This interactive room simulates a realistic digital forensics investigation where the learner assumes the role of a DFIR First Responder and Forensics Lab Analyst tasked with acquiring and analysing digital evidence for use in a hypothetical court case.
+
+The lab incorporates key forensic principles — including the preservation of the chain of custody, the use of FTK Imager for forensic disk imaging, and evidence analysis — through a structured scenario involving a fictitious suspect charged with corporate espionage and theft of trade secrets. The scenarios and guided tasks within this lab have directly informed the procedures and discussions presented in this report.
+
+[Link to TryHackMe Lab](https://tryhackme.com/room/caseb4dm755)
+
+
