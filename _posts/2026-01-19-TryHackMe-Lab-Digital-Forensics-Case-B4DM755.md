@@ -10,6 +10,8 @@ This lab made extensive use of FTK Imager, a tool I am already familiar with thr
 
 In a real-world investigation, a write-blocking device would be used when mounting forensic artefacts to prevent accidental modification of evidence. This principle was reinforced during the lab.
 
+---
+
 ## Investigation Objectives
 
 The key objectives of the investigation were:
@@ -19,6 +21,8 @@ The key objectives of the investigation were:
 3. Create a forensically sound image of seized media
 4. Perform high‑level analysis of files and metadata
 5. Interpret findings in the context of a criminal investigation
+
+---
 
 ## Forensic Methodology
 
@@ -32,6 +36,8 @@ The investigation followed standard DFIR phases commonly used in law‑enforceme
 
 This structured approach ensures that evidence remains admissible and defensible if presented in legal proceedings.
 
+---
+
 ## Evidence Handling and Acquisition
 
 During the simulated search, removable media was identified as potential evidence. Proper evidence handling procedures were applied, including:
@@ -43,7 +49,9 @@ During the simulated search, removable media was identified as potential evidenc
 **Tools Used:**
 
 - FTK Imager – for evidence identification, preview, and forensic imaging
-- A full forensic image of the media was created using a raw (dd) format with hash verification enabled to ensure integrity.
+- A full forensic image of the media was created using a raw (dd) format with hash verification enabled to ensure integrity
+
+---
 
 ## Forensic Imaging Process
 
@@ -56,6 +64,8 @@ Key forensic acquisition steps included:
 
 This process ensures that all analysis is conducted on a verified copy rather than the original evidence.
 
+---
+
 ## High‑Level Analysis Approach
 
 After acquisition, analysis focused on file system structure and artefact review, including:
@@ -67,14 +77,18 @@ After acquisition, analysis focused on file system structure and artefact review
   - File type mismatches
   - Embedded metadata (e.g., EXIF data)
 
+---
+
 ## Investigative Reasoning
 
 Throughout the investigation, artefacts were interpreted within the broader case context. Examples of reasoning applied include:
 
-- Correlating timestamps to reconstruct potential activity timelines
-- Assessing whether file concealment techniques were used
-- Identifying how metadata may link a suspect to locations or events
-- Recognising indicators of deliberate data handling or exfiltration
+1. Correlating timestamps to reconstruct potential activity timelines
+2. Assessing whether file concealment techniques were used
+3. Identifying how metadata may link a suspect to locations or events
+4. Recognising indicators of deliberate data handling or exfiltration
+
+---
 
 ## Key Skills Demonstrated
 
@@ -87,6 +101,8 @@ This lab allowed me to demonstrate and strengthen the following skills:
 - Investigative documentation and reporting
 - Legal and ethical awareness in digital forensics
 
+---
+
 ## Reflection
 
 This exercise reinforced the importance of process over answers in digital forensics. Proper documentation, integrity verification, and structured reasoning are critical for producing reliable and defensible findings.
@@ -96,6 +112,8 @@ The lab also highlighted how small artefacts, such as metadata or file inconsist
 Rather than focusing on challenge answers, the analysis emphasised how evidence can reveal user behaviour, timelines, and intent — a core skill in digital forensics.
 
 This analytical process mirrors real‑world DFIR investigations where technical findings must support investigative hypotheses.
+
+---
 
 ## Acknowledgement
 
