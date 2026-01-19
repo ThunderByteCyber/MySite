@@ -74,9 +74,9 @@ After acquisition, analysis focused on file system structure and artefact review
 - Reviewing file listings and directory structures
 - Identifying deleted or hidden files
 - Examining file metadata for indicators such as:
-  - Creation and modification timestamps
-  - File type mismatches
-  - Embedded metadata (e.g., EXIF data)
+  * Creation and modification timestamps
+  * File type mismatches
+  * Embedded metadata (e.g., EXIF data)
 
 ---
 
@@ -123,5 +123,6 @@ I would like to acknowledge the Digital Forensics Case B4DM755 lab provided by T
 The lab incorporates key forensic principles — including the preservation of the chain of custody, the use of FTK Imager for forensic disk imaging, and evidence analysis — through a structured scenario involving a fictitious suspect charged with corporate espionage and theft of trade secrets. The scenarios and guided tasks within this lab have directly informed the procedures and discussions presented in this report.
 
 [Link to TryHackMe Lab](https://tryhackme.com/room/caseb4dm755)
+
 
 
