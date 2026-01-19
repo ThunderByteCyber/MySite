@@ -2,10 +2,9 @@
 
 <br>
 
-#### <ins> The Lab </ins>
 
 
-1. Overview
+## Overview
 
 This write‑up documents my approach to a simulated digital forensics and incident response (DFIR) investigation based on the TryHackMe – Digital Forensics Case: B4DM755 lab. The purpose of this post is to demonstrate forensic methodology, tool usage, and investigative reasoning in a portfolio‑safe manner, without disclosing sensitive answers, flags, or step‑by‑step solutions.
 
@@ -17,9 +16,10 @@ In a real-world investigation, a write-blocking device would be used when mounti
 
 <br>
 
-2. Investigation Objectives
+## Investigation Objectives
 
 The key objectives of the investigation were:
+
 <ol>
 
 <li>Apply legally defensible digital forensics procedures</li>
@@ -36,7 +36,7 @@ The key objectives of the investigation were:
 
 <br>
 
-3. Forensic Methodology
+## Forensic Methodology
 
 The investigation followed standard DFIR phases commonly used in law‑enforcement and corporate investigations:
 <ol>
@@ -56,7 +56,7 @@ The investigation followed standard DFIR phases commonly used in law‑enforceme
 
 <br>
 
-4. Evidence Handling and Acquisition
+## Evidence Handling and Acquisition
 
 During the simulated search, removable media was identified as potential evidence. Proper evidence handling procedures were applied, including:
 <ol>
@@ -76,13 +76,13 @@ Tool Used
 
 <br>
 
-5. Forensic Imaging Process
+## Forensic Imaging Process
 
 Key forensic acquisition steps included:
 
 <ol>
 
-</li>Verifying the media was not encrypted prior to imaging</li>
+<li>Verifying the media was not encrypted prior to imaging</li>
 
 <li>Selecting an appropriate image format for compatibility and integrity</li>
 
@@ -95,7 +95,7 @@ Key forensic acquisition steps included:
 
 <br>
 
-6. High‑Level Analysis Approach
+## High‑Level Analysis Approach
 
 After acquisition, analysis focused on file system structure and artefact review, including:
 <ol>
@@ -116,8 +116,9 @@ After acquisition, analysis focused on file system structure and artefact review
 Rather than focusing on challenge answers, the analysis emphasised how evidence can reveal user behaviour, timelines, and intent — a core skill in digital forensics.
 
 <br>
+<br>
 
-7. Investigative Reasoning
+## Investigative Reasoning
 
 Throughout the investigation, artefacts were interpreted within the broader case context. Examples of reasoning applied include:
 
@@ -137,7 +138,7 @@ This analytical process mirrors real‑world DFIR investigations where technical
 
 <br>
 
-8. Key Skills Demonstrated
+## Key Skills Demonstrated
 
 This lab allowed me to demonstrate and strengthen the following skills:
 <ol>
@@ -157,7 +158,7 @@ This lab allowed me to demonstrate and strengthen the following skills:
 
 <br>
 
-9. Reflection
+## Reflection
 
 This exercise reinforced the importance of process over answers in digital forensics. Proper documentation, integrity verification, and structured reasoning are critical for producing reliable and defensible findings.
 
@@ -165,10 +166,11 @@ The lab also highlighted how small artefacts, such as metadata or file inconsist
 
 <br>
 
-10. Acknowledgement
+## Acknowledgement
 
 I would like to acknowledge the Digital Forensics Case B4DM755 lab provided by TryHackMe as the foundation for the practical components of this write-up. This interactive room simulates a realistic digital forensics investigation where the learner assumes the role of a DFIR First Responder and Forensics Lab Analyst tasked with acquiring and analysing digital evidence for use in a hypothetical court case. The lab incorporates key forensic principles — including the preservation of the chain of custody, the use of FTK Imager for forensic disk imaging, and evidence analysis — through a structured scenario involving a fictitious suspect charged with corporate espionage and theft of trade secrets. The scenarios and guided tasks within this lab have directly informed the procedures and discussions presented in this report. 
 [Link to TryHackMe Lab](https://tryhackme.com/room/caseb4dm755)  
+
 
 
 
