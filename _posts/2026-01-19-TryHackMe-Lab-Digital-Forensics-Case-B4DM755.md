@@ -1,7 +1,7 @@
 ---
 title: TryHackMe Lab - Digital Forensics Case B4DM755
 layout: post
-post-image: images/3835498970_b80c9fcbd3_w.jpg
+post-image: "https://github.com/ThunderByteCyber/MySite/blob/8ba49fbf29145f5aaf183c1e18ff5ed2c4d44180/images/3835498970_b80c9fcbd3_b.jpg"
 description: This write-up documents my approach to a simulated digital forensics and incident response (DFIR) 
 investigation on the TryHackMe - Digital Forensics Case: B4DM755
 tags:
@@ -134,6 +134,7 @@ I would like to acknowledge the Digital Forensics Case B4DM755 lab provided by T
 The lab incorporates key forensic principles — including the preservation of the chain of custody, the use of FTK Imager for forensic disk imaging, and evidence analysis — through a structured scenario involving a fictitious suspect charged with corporate espionage and theft of trade secrets. The scenarios and guided tasks within this lab have directly informed the procedures and discussions presented in this report.
 
 [Link to TryHackMe Lab](https://tryhackme.com/room/caseb4dm755)
+
 
 
 
