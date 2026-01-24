@@ -45,7 +45,7 @@ author-name: ThunderByteCyber
 # URL for the Image of the Author
 author-image: https://raw.githubusercontent.com/ThunderByteCyber/MySite/refs/heads/master/images/Screenshot_20250310_051443_Outlook.jpg
 # 60 Words About the Author
-author-about: I’m currently completing a Bachelor of Information Technology, majoring in Cybersecurity and Forensics at Murdoch University, with graduation expected by the end of 2025. A high-achieving and driven individual, I’m passionate about investigating cybercrime and aim to become a digital forensic investigator. I bring strong skills in critical thinking, ethical decision-making, and problem-solving, and I’m committed to evidence-based, responsible practice. With a focus on continuous learning, integrity, and collaboration, I strive to make a lasting impact in the cybersecurity field.
+author-about: Recently completed a Bachelor of Information Technology, majoring in Cyber Security and Forensics at Murdoch University. I am a high-achieving, driven individual passionate about investigating cybercrime, and I aim to become a successful digital forensic investigator. I bring strong skills in critical thinking, ethical decision-making, and problem-solving, and I’m committed to evidence-based, responsible practice. With a focus on continuous learning, integrity, and collaboration, I strive to make a lasting impact in the cybersecurity field.
 
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/ThunderByteCyber
@@ -96,3 +96,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
