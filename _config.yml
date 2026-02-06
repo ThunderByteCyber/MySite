@@ -60,7 +60,7 @@ permalink: "blog/:title"
 collections:
   hobbies:
     output: true
-    permalink: /hobbies/:name/
+    permalink: "hobbies/:title"
 
 
     
@@ -106,6 +106,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
 
 
 
