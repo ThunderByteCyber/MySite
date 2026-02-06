@@ -5,8 +5,10 @@ permalink: /hobbies/
 ---
 
 {% for hobby in site.hobbies %}
-  <h2><a href="{{ hobbies.url }}">{{ hobbies.title }}</a></h2>
-  <p>{{ hobbies.excerpt }}</p>
+  <h2><a href="{{ hobby.url }}">{{ hobby.title }}</a></h2>
+  <p>{{ hobby.excerpt }}</p>
 {% endfor %}
+
+
 
 
