@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: blog
 title: Hobbies & Interests
 permalink: /hobbies/
 ---
@@ -8,6 +8,7 @@ permalink: /hobbies/
   <h2><a href="{{ hobby.url }}">{{ hobby.title }}</a></h2>
   <p>{{ hobby.excerpt }}</p>
 {% endfor %}
+
 
 
 
