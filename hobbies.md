@@ -20,7 +20,7 @@ permalink: /hobbies/
 
       <div class="card-content">
         <p class="title is-5">
-          <a href="{{ hobbies.url }}">{{ hobby.title }}</a>
+          <a href="{{ hobby.url }}">{{ hobby.title }}</a>
         </p>
         <p>{{ hobby.excerpt | strip_html | truncate: 120 }}</p>
       </div>
@@ -29,6 +29,7 @@ permalink: /hobbies/
 {% endfor %}
 
 </div>
+
 
 
 
