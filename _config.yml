@@ -57,10 +57,6 @@ plugins:
 # Permalink
 permalink: "blog/:title"
 
-      collections:
-  hobbies:
-    output: true
-    permalink: /hobbies/:name/
     
 # Compress
 compress_html:
@@ -83,12 +79,6 @@ defaults:
     values:
       layout: page
 
-     -
-    scope:
-      type: 'hobbies'
-    values:
-      layout: hobby
-      description: ""
 
 
 # Exclude
@@ -103,6 +93,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
 
 
 
