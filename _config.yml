@@ -81,7 +81,7 @@ defaults:
     values:
       layout: page
 
-  -
+  
 
 
 # Exclude
@@ -96,6 +96,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
 
 
 
